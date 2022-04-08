@@ -2,7 +2,7 @@ import FVal from "@/Helpers/FVal";
 import Button from "./Button";
 
 const Operatorpad = ({ setter }) => {
-    return ["+", "-", "*", "/", "**"].map((op) => (
+    return ["+", "-", "*", "/", "**", "="].map((op) => (
         <Button
             value={op === "**" ? "^" : op}
             clickHandler={() =>
